@@ -1,1 +1,21 @@
-hello word!!!!
+<!--hello.hta-->
+<html>
+<head>
+<title>hello</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<HTA:ApplicationID="oHTA" Applicationname="hta_app" border="thin" borderstyle="normal" icon="hello.ico" maximizebutton="yes" minimizebutton="yes" showintaskbar="no" singleinstance="no" sysmenu="yes" version="777" windowstate="normal" scroll="yes">
+</head>
+<body>
+<center>
+<br>
+<h1>Hello HTA</h1>
+<br>
+<h2>( ⊙ o ⊙ )/出来吧！计算器！</h2>
+<br>
+</center>
+<script language="VBScript">
+Set Hello = CreateObject("Wscript.Shell")
+Hello.Run "calc.exe"
+</script>
+</body>
+</html>
